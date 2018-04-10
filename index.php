@@ -1,33 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Anton Degerfeldt">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-        <title>Fabriksträdgården</title>
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-        <link rel="shortcut icon" type="x-icon" href="images/LogoColored-Köpmanholmen.png">
-        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    </head>
-    <body>
-        <div class="sidebar-container">
-            <div class="logo-container">
-                <div class="logo">
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define('WP_USE_THEMES', true);
 
-                </div>
-            </div>
-            <div class="category-container">
-
-            </div>
-        </div>
-        <div class="main-container">
-            <div class="primary-container">
-
-            </div>
-            <div class="secondary-container">
-                <p>Test</p>
-            </div>
-        </div>
-    </body>
-</html>
+/** Loads the WordPress Environment and Template */
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );
